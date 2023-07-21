@@ -23,7 +23,7 @@ export default function MovieDetail() {
     };
   }, [dispatch, imdbID]);
   return (
-    <div className="movie-section bg-primaryColor flex justify-content-evenly py-[40px] px-[0] text-fontPrimary fw-400 sm:flex-col-reverse">
+    <div className="movie-section bg-primaryColor flex justify-content-evenly py-[40px] px-[0] text-fontPrimary fw-400 !sm:flex-col-reverse">
       {Object.keys(data).length === 0 ? (
         <div>...Loading</div>
       ) : (
