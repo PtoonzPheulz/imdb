@@ -23,7 +23,7 @@ export default function MovieDetail() {
     };
   }, [dispatch, imdbID]);
   return (
-    <div className="movie-section bg-primaryColor flex justify-content-evenly py-[40px] px-[0] text-fontPrimary fw-400 flex-col-reverse">
+    <div className="movie-section bg-primaryColor d-flex justify-content-between py-[40px] px-[0] text-fontPrimary fw-400 flex-col-reverse">
       {Object.keys(data).length === 0 ? (
         <div>...Loading</div>
       ) : (
@@ -82,8 +82,8 @@ export default function MovieDetail() {
               </div>
             </div>
           </div>
-          <div className="section-right w-100  me-[30px] mt-[50px]">
-            <img className="w-100" src={data.Poster} alt={data.Title} />
+          <div className="section-right w-50 m-[auto]">
+            <img className="w-100 " src={data.Poster} alt={data.Title} />
           </div>
         </>
       )}
