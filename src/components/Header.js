@@ -19,7 +19,7 @@ export default function Home() {
     setTerm("");
   };
   return (
-    <div className="!bg-[#1a242f] ps-[40px] pe-[40px] flex align-items-center justify-content-between h-[72px]">
+    <div className="!bg-[#1a242f] ps-[40px] pe-[40px] d-flex align-items-center justify-content-between h-[72px]">
       <div className="text-fontPrimary">
         <Link to="/">Movie App</Link>
       </div>
