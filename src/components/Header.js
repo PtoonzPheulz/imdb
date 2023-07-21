@@ -23,9 +23,9 @@ export default function Home() {
       <div className="text-fontPrimary">
         <Link to="/">Movie App</Link>
       </div>
-      <div className="search-bar w-50 flex justify-content-center">
+      <div className="search-bar w-50 flex justify-content-center sm:w-[70%]">
         <form
-          className="flex justify-content-center me[20px] w-[60%]"
+          className="flex justify-content-center me[20px] sm:w-[74%] w-[60%]"
           onSubmit={submitHandler}
         >
           <input

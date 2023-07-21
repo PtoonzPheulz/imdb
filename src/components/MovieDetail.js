@@ -23,7 +23,7 @@ export default function MovieDetail() {
     };
   }, [dispatch, imdbID]);
   return (
-    <div className="movie-section bg-primaryColor flex justify-content-evenly py-[40px] px-[0] text-fontPrimary fw-400">
+    <div className="movie-section bg-primaryColor flex justify-content-evenly py-[40px] px-[0] text-fontPrimary fw-400 sm:flex-col-reverse">
       {Object.keys(data).length === 0 ? (
         <div>...Loading</div>
       ) : (
@@ -52,23 +52,33 @@ export default function MovieDetail() {
             <div className="movie-info mt-3">
               <div className="d-flex justify-content-between my-2">
                 <span className="text-fontPrimary">Director</span>
-                <span className="text-fontSecondary">{data.Director}</span>
+                <span className="text-fontSecondary text-end">
+                  {data.Director}
+                </span>
               </div>
               <div className="d-flex justify-content-between my-2">
                 <span className="text-fontPrimary">Casts</span>
-                <span className="text-fontSecondary">{data.Actors}</span>
+                <span className="text-fontSecondary text-end">
+                  {data.Actors}
+                </span>
               </div>
               <div className="d-flex justify-content-between my-2">
-                <span className="text-fontPrimary">genre</span>
-                <span className="text-fontSecondary">{data.Genre}</span>
+                <span className="text-fontPrimary">Genre</span>
+                <span className="text-fontSecondary text-end">
+                  {data.Genre}
+                </span>
               </div>
               <div className="d-flex justify-content-between my-2">
                 <span className="text-fontPrimary">Languages</span>
-                <span className="text-fontSecondary">{data.Language}</span>
+                <span className="text-fontSecondary text-end">
+                  {data.Language}
+                </span>
               </div>
               <div className="d-flex justify-content-between my-2">
                 <span className="text-fontPrimary">Awards</span>
-                <span className="text-fontSecondary">{data.Awards}</span>
+                <span className="text-fontSecondary text-end">
+                  {data.Awards}
+                </span>
               </div>
             </div>
           </div>
